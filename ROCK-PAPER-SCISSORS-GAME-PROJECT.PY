@@ -1,4 +1,4 @@
-#   --------------------------------- ROCK PAPER SCISSOR GAME -----------------------------------------------  
+#  ----------------------------------- ROCK PAPER SCISSOR GAME -------------------------------------------  
 
 
 #  CREATE A 2 VARIABLR TO TRACKING WINING GAME for Both
@@ -7,11 +7,12 @@ player_count=0          #for count PLAYER WIN
 computer_count=0        #for count COMPUTER WIN
 
 
-#     Write a function To Player choose a ROCK PAPAER SCISSOR
+#  Write a function To Player choose a ROCK PAPAER SCISSOR
 
 def player_choose():
     
-    """[get input from user (R P S) ]
+    """
+    [get input from user (R P S) ]
 
     Returns:
         [STRING]: [we get input user and check it RIGHT or WRONG in while loop]
@@ -21,7 +22,7 @@ def player_choose():
     
     while choice not in ['R','P','S']:  # FOR REPEATLY ASK INPUT IF USER CAN GIVE WROMNG INPUT
         
-        choice=input("\nUser Choice: Choose (R,P,S) ").upper()
+        choice=input("\nUser Choice: Choose (R,P,S) ").upper() 
         
         if choice not in ['R','P','S']:
             print(" \nINVALID INPUT! ")
@@ -48,7 +49,8 @@ def player_choose():
 import random  # TO RANDOM CHOOSE NUMBER IN 1 2 3 and GIVE OUTPUT
 def comp_choose():
     
-    """[get input from computer as use with random]
+    """
+    [get input from computer as use with random]
 
     Returns:
         [STRING]: [comp select randomly (1,2,3) and compare and return it STRING ]
@@ -69,11 +71,12 @@ def comp_choose():
 #print(comp_choose())
   
   
-  #   WRITE A FUNC TO PLAY AGAIN GAME
+  #  WRITE A FUNC TO PLAY AGAIN GAME
   
 def ply_again():
     
-    """[if player should be play again or not ]
+    """
+    [if player should be play again or not ]
 
     Returns:
         [STRING]: [player choice (Y OR N) and if select Y game is restart and if N game is EXIT]
@@ -93,7 +96,7 @@ def ply_again():
 #ply_again()
 
 
-# WRITE A LOGIC TO START GAME AND REPEATLY ASK TO PLAY AGAIN 
+# ---------------------------------------- LOGIC PART -----------------------------------------
 
 game_on=True
 while game_on:
